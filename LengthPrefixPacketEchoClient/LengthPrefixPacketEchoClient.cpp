@@ -78,7 +78,7 @@ int main()
 			break;
 		
 		uint32_t bodyLength = static_cast<uint32_t>(message.size());
-		uint32_t headLength = htonl(bodyLength);
+		uint32_t headLength = htonl(bodyLength); // 호스트 바이트 오더에서 네트워크 바이트 오더로
 
 
 		// 1. 길이 헤더 전송
